@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.cont{
+			display: flex;
+			width: 90%;
+			overflow: auto;
+
+			/*height: 70px;*/
+			padding: 20px 0 20px 20px;
+			/*border: 1px solid black;*/
+		}
+		.one div{
+			min-width: 200px;
+			height: 100px;
+			background-color: red;
+			margin: 2px;
+			color: white;
+		}
+
+		.two div{
+			min-width: 200px;
+			height: 100px;
+			background-color: red;
+			margin: 2px;
+			color: white;
+		}
+		.one,.two{
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+	<div class="cont">
+		<div class="one">
+			<div>1</div>
+		    <div>2</div>
+		    <div>3</div>
+		    <div>4</div>
+		    <div>5</div>
+		    <div>6</div>
+		    <div>7</div>
+		    <div>8</div>
+		    <div>9</div>
+		    <div>10</div>
+		    <div>11</div>
+		    <div>12</div>
+		</div>
+
+		<div class="two">
+			<div>#####</div>
+		    <div>2</div>
+		    <div>3</div>
+		    <div>4</div>
+		    <div>5</div>
+		    <div>6</div>
+		    <div>7</div>
+		    <div>8</div>
+		    <div>9</div>
+		    <div>10</div>
+		    <div>11</div>
+		    <div>12</div>
+		</div>
+		
+	</div>
+	<script>
+		setInterval(function(){
+			$(".one").clone().appendTo(".cont");
+		},40000)
+		 setInterval(function(){
+		 	document.querySelector(".cont").scrollLeft =
+		 	document.querySelector(".cont").scrollLeft + 1;
+
+		 
+
+ 			},15)
+
+	</script>
+	<script src="javascript/jquery-3.6.0.min.js"></script>
+</body>
+</html>

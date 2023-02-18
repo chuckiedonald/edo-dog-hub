@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+	<div class="log-reg-cont">
+		
+		<div style="width:320px; float:right" class="login">
+            <form action="formresult2.php" method="POST">
+            	<div class="login-cont">
+            		<h2 class="login-header">Login <!-- <span>Sign up</span> --></h2>
+            		<!-- <div class="login-underline"></div> -->
+            	</div>
+            	<p style="display: none;">Log in your correct details</p>
+                <!-- <span class="label">Email</span> --><br>
+                <input type="text" name="email" placeholder="Phone number, username, or email" onkeydown="plus()" required><br>
+                <!-- <span class="label">Password</span> --><br>
+                <input type="password" placeholder="Password" required name="pwd"><br>
+                <input class="remember" type="checkbox" value="remember" name="remember">
+                <label><span class="rem">Remember me?</span></label>
+                <button type="submit" class="button">Sign in</button><br></form><br>
+                <span class="label recovery"><a href="rememberpassword.php">Forgot password?</a> </span><br><br>
+                <hr>
+                <div class="or"><p>OR</p></div>
+            </form>
+        </div>
+
+	</div>
+</body>
+</html>
